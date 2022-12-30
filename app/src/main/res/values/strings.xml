@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BasicProjects</string>
+    <string name="download">Download</string>
+    <string name="generate">generate</string>
+    <string name="cat_phrase">Digite a frase para o gato</string>
+    <string name="cat_image">cat image</string>
+</resources>

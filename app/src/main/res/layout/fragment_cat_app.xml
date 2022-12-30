@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/pages_pd"
+    tools:context=".catapp.CatApp">
+
+    <data>
+
+        <variable
+            name="app_title"
+            type="com.example.basicprojects.catapp.CatApp" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <ImageView
+            android:id="@+id/imageResult"
+            android:layout_width="300sp"
+            android:layout_height="300sp"
+            android:layout_marginTop="60dp"
+            android:contentDescription="@string/cat_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageResult"
+            app:layout_constraintVertical_bias="0.110000014">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/catInputPhrase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/cat_phrase"
+                android:textColorHint="#616161" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="300sp"
+            android:layout_height="60sp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+            app:layout_constraintVertical_bias="0.23000002">
+
+            <Button
+                android:id="@+id/downloadButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/download" />
+
+            <Space
+                android:layout_width="60sp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/generateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/generate" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
