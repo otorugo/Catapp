@@ -19,16 +19,15 @@
         >
 
 
-        <ImageView
+        <TextView
             android:id="@+id/imageResult"
             android:layout_width="300sp"
             android:layout_height="300sp"
             android:layout_marginTop="60dp"
-            android:contentDescription="@string/cat_image"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:src="@tools:sample/avatars" />
+             />
 
         <Spinner
             android:id="@+id/catappSpinner"

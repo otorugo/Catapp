@@ -7,7 +7,10 @@ import android.widget.BaseAdapter
 import android.widget.TextView
 import androidx.core.view.setPadding
 
+
 class CustomSpinnerAdapter(private val context : Context, private val tags : Array<String>) : BaseAdapter() {
+
+
 
     override fun getCount(): Int {
         return tags.size
